@@ -5,7 +5,7 @@ let i = 1;
 function MouseClickCoords(e){
   var mouseX = parseInt(e.clientX);
   var mouseY = parseInt(e.clientY);
-  if (mouseX > 200 || mouseY > 200){
+  if (mouseX > 370 || mouseY > 200){
     coords.push([mouseX,mouseY]);
   }
 }
@@ -94,4 +94,8 @@ function connectStartAndEnd(){
     connectTwoNodes(coords.length-1, 0);
     i = 0;
   }
+}
+
+function clear1(){
+  location.reload();
 }
